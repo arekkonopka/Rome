@@ -1,0 +1,23 @@
+.ul-container li:nth-child(n):hover ~ .home-img-container{
+  transform: scale(1.1);
+}
+.ul-container li:nth-child(n):hover  ~ .home-img-container > div{
+  transform: scale(1.1);
+  transform: translateX(100px);
+}
+.ul-container li{
+  transition: 1s 0.3s;
+}
+.ul-container li:nth-child(n):hover span{
+  left: 10%
+}
+.home-img-container{
+  width: 800px;
+  height: 600px;
+  top: 5%;
+  right: 3%;
+}
+.home-img-container img{
+  width:80%;
+  height: 80%;
+}
