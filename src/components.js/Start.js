@@ -13,7 +13,7 @@ const Start = () => {
 
   return (
     <div
-      className={`shadow-xl opacity-1 flex justify-center items-center flex-col  bg-gradient-to-r from-green-400 via-gray-100 to-red-500 text-white w-screen h-screen absolute top-0 trasition duration-200 ${animation}`} >
+      className={`shadow-xl opacity-1 flex justify-center items-center flex-col  bg-gradient-to-r from-green-400 via-gray-100 to-red-500 text-white w-screen h-screen absolute top-0 trasition duration-200 ${animation} z-20`} >
 
       <div className={` h-full flex-1 flex text-center items-center p-10`}>
         <Typing

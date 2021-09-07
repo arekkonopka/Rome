@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
 
-
+html{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .card {
-  @apply h-screen w-screen pt-20
+  @apply h-screen w-screen pt-20 
 }
 
 .monument-name{
