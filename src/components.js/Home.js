@@ -7,11 +7,11 @@ import forumRomanum from "../assets/images/HomeImg/forumRomanum.jpg";
 import kaplicaSykstynska from "../assets/images/HomeImg/kaplicaSykstyńska.jpg";
 import muzeaWatykanskie from "../assets/images/HomeImg/muzeaWatykanskie.jpg";
 import ArrowRightAltIcon from "@material-ui/icons/ArrowRightAlt";
-import img1 from "../assets/images/backgroundImg/img1.jpg";
 import img2 from "../assets/images/backgroundImg/img2.jpg";
 import img3 from "../assets/images/backgroundImg/img3.jpg";
 import img4 from "../assets/images/backgroundImg/img4.jpg";
-import img5 from "../assets/images/backgroundImg/img5.jpg";
+import concrete from "../assets/images/backgroundImg/concrete.jpg";
+import art from "../assets/images/backgroundImg/art.jpg";
 import RomaView from "../assets/images/backgroundImg/RomaView.jpg";
 
 const Home = () => {
@@ -163,13 +163,13 @@ const Home = () => {
 
   useEffect(() => {
     if (mouseOn.colloseum.isHover) {
-      setBackground(img5);
+      setBackground(concrete);
     } else if (mouseOn.fontannaDiTrevi.isHover) {
       setBackground(img2);
     } else if (mouseOn.forumRomanum.isHover) {
       setBackground(img3);
     } else if (mouseOn.muzeaWatykanskie.isHover) {
-      setBackground(img1);
+      setBackground(art);
     } else if (mouseOn.kaplicaSykstynska.isHover) {
       setBackground(img4);
     } else {

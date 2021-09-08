@@ -1,90 +1,90 @@
-.ul-container li:nth-child(n):hover ~ .home-img-container{
+.ul-container li:nth-child(n):hover ~ .home-img-container {
   transform: scale(1.1);
 }
-.ul-container li:nth-child(n):hover  ~ .home-img-container > div{
+.ul-container li:nth-child(n):hover ~ .home-img-container > div {
   transform: scale(1.1);
   transform: translateX(100px);
 }
-.ul-container li{
+.ul-container li {
   transition: 1s 0.3s;
 }
 
-.ul-container li:nth-child(n):hover span{
+.ul-container li:nth-child(n):hover span {
   left: 10%;
   transition: 0.3s ease-in;
 }
-.home-img-container{
+.home-img-container {
   width: 800px;
   height: 600px;
   top: 5%;
   right: 3%;
 }
-.home-img-container img{
-  width:80%;
+.home-img-container img {
+  width: 80%;
   height: 80%;
 }
+
 @media screen and (max-width: 1500px) {
-  .home-img-container{
+  .home-img-container {
     top: 5%;
     right: -5%;
   }
 }
 @media screen and (max-width: 1300px) {
-  .home-img-container{
-    width:650px;
+  .home-img-container {
+    width: 650px;
     height: 450px;
     top: 10%;
   }
 
-  .ul-container li{
-font-size: 28px;
+  .ul-container li {
+    font-size: 28px;
   }
 }
 
 @media screen and (max-width: 1100px) {
-  .home-img-container{
-    width:550px;
+  .home-img-container {
+    width: 550px;
     height: 450px;
-
   }
 
-  .ul-container li{
+  .ul-container li {
     font-size: 24px;
   }
 }
 
 @media screen and (max-width: 1000px) {
-  .home-img-container{
+  .home-img-container {
     display: none;
   }
-  .ul-container{
+  .ul-container {
     display: flex;
     flex-direction: column;
-}
-  .ul-container li{
+  }
+  .ul-container li {
     font-size: 24px;
   }
-  .ul-container li span{
+  .ul-container li span {
     display: none;
-      }
+  }
 }
 
 @media screen and (max-width: 600px) {
-  .ul-container li{
-    margin:20px;
+  .ul-container li {
+    margin: 20px;
     font-size: 20px;
   }
 }
 @media screen and (max-width: 450px) {
-  .ul-container li{
-    margin:10px;
+  .ul-container li {
+    margin: 10px;
     font-size: 20px;
   }
 }
 
 @media screen and (max-width: 361px) {
-  .ul-container li{
-    margin:5px;
+  .ul-container li {
+    margin: 5px;
     font-size: 15px;
   }
 }
