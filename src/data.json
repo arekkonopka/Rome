@@ -1,0 +1,42 @@
+{
+  "start": {
+    "pl":"Włochy - Rzym",
+    "eng":"Italy - Rome"
+  },
+  "home":{
+    "zobacz":{
+      "pl":"Zobacz więcej",
+      "eng":"Let see"
+    },
+    "koloseum":{
+      "pl":"Koloseum",
+      "eng":"Colosseum"
+    },
+    "fontanna":{
+      "pl":"Fontanna di Trevi",
+      "eng":"Trevi Fountain"
+    },
+    "forumRomanum":{
+      "pl":"Forum Romanum",
+      "eng":"The Roman Forum"
+    },
+    "muzea":{
+      "pl":"Muzea Watykańskie",
+      "eng":"Vatican Museums"
+    },
+    "kaplica":{
+      "pl":"Kaplica Sykstyńska",
+      "eng":"The Sistine Chapel"
+    }
+  },
+  "about":{
+    "firstLine":{
+      "pl":"Cześć! Ta strona została utworzona losowo. Została stworzona do potrenowania tailwind",
+      "eng":"Hi! This website was created randomly. It was made to practice tailwind."
+    },
+    "secondLine":{
+      "pl":"Nie do użytku komercyjnego.",
+      "eng":"Not for commercial using."
+    }
+  }
+}

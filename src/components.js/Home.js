@@ -13,8 +13,9 @@ import img4 from "../assets/images/backgroundImg/img4.jpg";
 import concrete from "../assets/images/backgroundImg/concrete.jpg";
 import art from "../assets/images/backgroundImg/art.jpg";
 import RomaView from "../assets/images/backgroundImg/RomaView.jpg";
+import data from "../data.json";
 
-const Home = () => {
+const Home = ({ isPolish }) => {
   const [background, setBackground] = useState("");
   const [mouseOn, setMouseOn] = useState({
     colloseum: {
@@ -197,7 +198,9 @@ const Home = () => {
             onMouseOver={() => onMouseOver("colloseum")}
             onMouseOut={() => onMouseOut("colloseum")}
           >
-            <a href="/history#colosseum">Koloseum w Rzymie</a>
+            <a href="/history#colosseum">
+              {isPolish ? data.home.koloseum.pl : data.home.koloseum.eng}
+            </a>
             <span className="block w-2/3 h-0.5 bg-gray-200 absolute -bottom-5 -left-10 "></span>
           </li>
           <div
@@ -209,7 +212,9 @@ const Home = () => {
           >
             <img src={colosseum} alt="colloseum" className="rounded-lg " />
             <div className="flex items-center transition duration-1000 delay-300">
-              <p className="text-xl mr-2 text-gray-500">Let see something</p>
+              <p className="text-xl mr-2 text-gray-500">
+                {isPolish ? data.home.zobacz.pl : data.home.zobacz.eng}
+              </p>
               <ArrowRightAltIcon fontSize="large" className="text-gray-500" />
             </div>
           </div>
@@ -219,7 +224,9 @@ const Home = () => {
             onMouseOver={() => onMouseOver("fontannaDiTrevi")}
             onMouseOut={() => onMouseOut("fontannaDiTrevi")}
           >
-            <a href="/history#fontannaDiTrevi">Fontanna Di Trevi</a>
+            <a href="/history#fontannaDiTrevi">
+              {isPolish ? data.home.fontanna.pl : data.home.fontanna.eng}
+            </a>
             <span className="block w-2/3 h-0.5 bg-gray-200 absolute -bottom-5 -left-10 transition duration"></span>
           </li>
           <div
@@ -237,7 +244,9 @@ const Home = () => {
               className="rounded-lg "
             />
             <div className="flex items-center transition duration-1000 delay-300">
-              <p className="text-xl mr-2 text-gray-300">Let see something </p>
+              <p className="text-xl mr-2 text-gray-300">
+                {isPolish ? data.home.zobacz.pl : data.home.zobacz.eng}{" "}
+              </p>
               <ArrowRightAltIcon fontSize="large" className="text-gray-300" />
             </div>
           </div>
@@ -247,7 +256,11 @@ const Home = () => {
             onMouseOver={() => onMouseOver("forumRomanum")}
             onMouseOut={() => onMouseOut("forumRomanum")}
           >
-            <a href="/history#forumRomanum">Forum Romanum</a>
+            <a href="/history#forumRomanum">
+              {isPolish
+                ? data.home.forumRomanum.pl
+                : data.home.forumRomanum.eng}
+            </a>
             <span className="block w-2/3 h-0.5 bg-gray-200 absolute -bottom-5 -left-10 transition duration"></span>
           </li>
           <div
@@ -263,7 +276,9 @@ const Home = () => {
               className="rounded-lg "
             />
             <div className="flex items-center transition duration-1000 delay-300">
-              <p className="text-xl mr-2 text-gray-300">Let see something </p>
+              <p className="text-xl mr-2 text-gray-300">
+                {isPolish ? data.home.zobacz.pl : data.home.zobacz.eng}{" "}
+              </p>
               <ArrowRightAltIcon fontSize="large" className="text-gray-300" />
             </div>
           </div>
@@ -273,7 +288,9 @@ const Home = () => {
             onMouseOver={() => onMouseOver("muzeaWatykanskie")}
             onMouseOut={() => onMouseOut("muzeaWatykanskie")}
           >
-            <a href="/history#muzeaWatykanskie">Muzea Watykańskie</a>
+            <a href="/history#muzeaWatykanskie">
+              {isPolish ? data.home.muzea.pl : data.home.muzea.eng}
+            </a>
             <span className="block w-2/3 h-0.5 bg-gray-200 absolute -bottom-5 -left-10 transition duration"></span>
           </li>
           <div
@@ -293,7 +310,9 @@ const Home = () => {
               className="rounded-lg "
             />
             <div className="flex items-center transition duration-1000 delay-300">
-              <p className="text-xl mr-2 text-gray-300">Let see something </p>
+              <p className="text-xl mr-2 text-gray-300">
+                {isPolish ? data.home.zobacz.pl : data.home.zobacz.eng}{" "}
+              </p>
               <ArrowRightAltIcon fontSize="large" className="text-gray-300" />
             </div>
           </div>
@@ -303,7 +322,9 @@ const Home = () => {
             onMouseOver={() => onMouseOver("kaplicaSykstynska")}
             onMouseOut={() => onMouseOut("kaplicaSykstynska")}
           >
-            <a href="/history#kaplicaSykstynska">Kaplica Sykstyńska</a>
+            <a href="/history#kaplicaSykstynska">
+              {isPolish ? data.home.kaplica.pl : data.home.kaplica.eng}
+            </a>
             <span className="block w-2/3 h-0.5 bg-gray-200 absolute -bottom-5 -left-10 transition duration"></span>
           </li>
           <div
@@ -323,7 +344,9 @@ const Home = () => {
               className="rounded-lg "
             />
             <div className="flex items-center transition duration-1000 delay-300">
-              <p className="text-xl mr-2 text-gray-300">Let see something </p>
+              <p className="text-xl mr-2 text-gray-300">
+                {isPolish ? data.home.zobacz.pl : data.home.zobacz.eng}{" "}
+              </p>
               <ArrowRightAltIcon fontSize="large" className="text-gray-300" />
             </div>
           </div>

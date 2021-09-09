@@ -3,7 +3,7 @@ import Monument from "./Monument/Monument";
 import monumentsData from "./Monument/monuments.json";
 import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
 
-const History = ({ active }) => {
+const History = ({ active, isPolish }) => {
   return (
     <div
       className={`${
@@ -13,10 +13,12 @@ const History = ({ active }) => {
       {monumentsData.map((monument, index) => (
         <Monument
           key={index}
-          monumentName={monument.pl.name}
-          description={monument.pl.description}
-          id={monument.pl.id}
-          url={monument.pl.id}
+          monumentName={isPolish ? monument.pl.name : monument.eng.name}
+          description={
+            isPolish ? monument.pl.description : monument.eng.description
+          }
+          id={isPolish ? monument.pl.id : monument.eng.id}
+          url={isPolish ? monument.pl.id : monument.eng.id}
         />
       ))}
       <a href="history#navbar">

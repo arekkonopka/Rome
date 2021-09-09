@@ -8,15 +8,15 @@ import muzeaWatykanskie from "../../../assets/images/HomeImg/muzeaWatykanskie.jp
 
 const Monument = ({ monumentName, description, id, url }) => {
   let name;
-  if (url == "colosseum") {
+  if (url === "colosseum") {
     name = colosseum;
-  } else if (url == "fontannaDiTrevi") {
+  } else if (url === "fontannaDiTrevi") {
     name = fontannaDiTrevi;
-  } else if (url == "forumRomanum") {
+  } else if (url === "forumRomanum") {
     name = forumRomanum;
-  } else if (url == "kaplicaSykstynska") {
+  } else if (url === "kaplicaSykstynska") {
     name = kaplicaSykstynska;
-  } else if (url == "muzeaWatykanskie") {
+  } else if (url === "muzeaWatykanskie") {
     name = muzeaWatykanskie;
   }
 

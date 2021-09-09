@@ -11,6 +11,7 @@ import { AnimatePresence, motion } from "framer-motion";
 
 function App() {
   const [active, setActive] = useState(false);
+  const [isPolish, setIsPolish] = useState(true);
   const [breakpoint, setBreakpoint] = useState(window.innerWidth);
 
   const onClickButton = () => {
@@ -32,6 +33,8 @@ function App() {
     return () => window.removeEventListener("resieze", updateWidthAndHeight);
   });
 
+  const polishLanguage = (bool) => setIsPolish(bool);
+
   return (
     <motion.div
       // initial={{ x: 300, opacity: 0 }}
@@ -40,7 +43,11 @@ function App() {
       className="App relative font-sans"
     >
       <Router>
-        <Navbar active={active} isClickedActive={isClickedActive} />
+        <Navbar
+          active={active}
+          isClickedActive={isClickedActive}
+          polishLanguage={polishLanguage}
+        />
         {breakpoint <= 640 ? (
           <MenuIcon
             onClick={onClickButton}
@@ -54,12 +61,14 @@ function App() {
             <Route path="/" exact>
               <Start />
             </Route>
-            <Route component={Home} path="/home" />
+            <Route path="/home">
+              <Home isPolish={isPolish}></Home>
+            </Route>
             <Route path="/about">
-              <About active={active} />
+              <About active={active} isPolish={isPolish} />
             </Route>
             <Route path="/history">
-              <History active={active}></History>
+              <History active={active} isPolish={isPolish}></History>
             </Route>
           </Switch>
         </AnimatePresence>
