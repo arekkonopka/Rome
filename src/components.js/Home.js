@@ -197,7 +197,7 @@ const Home = () => {
             onMouseOver={() => onMouseOver("colloseum")}
             onMouseOut={() => onMouseOut("colloseum")}
           >
-            <a href="/history#koloseum">Koloseum w Rzymie</a>
+            <a href="/history#colosseum">Koloseum w Rzymie</a>
             <span className="block w-2/3 h-0.5 bg-gray-200 absolute -bottom-5 -left-10 "></span>
           </li>
           <div
@@ -219,7 +219,7 @@ const Home = () => {
             onMouseOver={() => onMouseOver("fontannaDiTrevi")}
             onMouseOut={() => onMouseOut("fontannaDiTrevi")}
           >
-            <a href="/history#fontanna">Fontanna Di Trevi</a>
+            <a href="/history#fontannaDiTrevi">Fontanna Di Trevi</a>
             <span className="block w-2/3 h-0.5 bg-gray-200 absolute -bottom-5 -left-10 transition duration"></span>
           </li>
           <div

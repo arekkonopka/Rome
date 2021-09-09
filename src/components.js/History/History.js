@@ -16,6 +16,7 @@ const History = ({ active }) => {
           monumentName={monument.pl.name}
           description={monument.pl.description}
           id={monument.pl.id}
+          url={monument.pl.id}
         />
       ))}
       <a href="history#navbar">

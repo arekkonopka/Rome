@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rampart+One&display=swap");
 
-html{
+html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
@@ -10,15 +10,13 @@ html{
 @tailwind utilities;
 
 .card {
-  @apply h-screen w-screen pt-20 
+  @apply h-screen w-screen pt-20;
 }
 
-.monument-name{
-  @apply m-12 text-4xl cursor-pointer
+.monument-name {
+  @apply m-12 text-4xl cursor-pointer;
 }
 
-.home-img-container{
-  @apply w-11/12 m-5 rounded-lg overflow-hidden
+.home-img-container {
+  @apply w-11/12 m-5 rounded-lg overflow-hidden;
 }
-
-

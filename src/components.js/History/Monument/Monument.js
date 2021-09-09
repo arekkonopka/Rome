@@ -1,11 +1,24 @@
 import React from "react";
-import image from "../../../assets/images/HomeImg/colosseum.jpg";
+import "./index.css";
+import colosseum from "../../../assets/images/HomeImg/colosseum.jpg";
+import fontannaDiTrevi from "../../../assets/images/HomeImg/fontannaDiTrevi.jpg";
+import forumRomanum from "../../../assets/images/HomeImg/forumRomanum.jpg";
+import kaplicaSykstynska from "../../../assets/images/HomeImg/kaplicaSykstyńska.jpg";
+import muzeaWatykanskie from "../../../assets/images/HomeImg/muzeaWatykanskie.jpg";
 
-const Monument = ({ monumentName, description, id }) => {
-  const style = {
-    backgroundImage: `url('../assets/images/HomeImg/kaplicaSykstyńska.jpg')`,
-    height: "200px",
-  };
+const Monument = ({ monumentName, description, id, url }) => {
+  let name;
+  if (url == "colosseum") {
+    name = colosseum;
+  } else if (url == "fontannaDiTrevi") {
+    name = fontannaDiTrevi;
+  } else if (url == "forumRomanum") {
+    name = forumRomanum;
+  } else if (url == "kaplicaSykstynska") {
+    name = kaplicaSykstynska;
+  } else if (url == "muzeaWatykanskie") {
+    name = muzeaWatykanskie;
+  }
 
   return (
     <div
@@ -15,7 +28,14 @@ const Monument = ({ monumentName, description, id }) => {
     >
       <h1 className="text-lg">{monumentName}</h1>
       <p className="mt-5 mb-5">{description}</p>
-      <div className="p-10 w-full " style={style}></div>
+      <div
+        className="image p-2 w-full image rounded-xl"
+        style={{
+          backgroundImage: `url(${name})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+        }}
+      ></div>
     </div>
   );
 };
